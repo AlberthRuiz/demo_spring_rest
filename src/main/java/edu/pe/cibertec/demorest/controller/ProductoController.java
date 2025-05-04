@@ -44,6 +44,7 @@ public class ProductoController {
         productoService.elminiar(id);
         return  new ResponseEntity<>(HttpStatus.OK);
     }
+
 }
 
 
