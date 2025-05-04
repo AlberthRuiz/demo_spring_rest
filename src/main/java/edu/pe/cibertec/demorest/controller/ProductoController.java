@@ -40,7 +40,7 @@ public class ProductoController {
     }
 
     @DeleteMapping(value = "/producto/{id}")
-    public ResponseEntity<?> eliminar(int id) {
+    public ResponseEntity<?> eliminar(@PathVariable int id) {
         productoService.elminiar(id);
         return  new ResponseEntity<>(HttpStatus.OK);
     }
